@@ -1,0 +1,17 @@
+{
+    "name": "unclenine/rssparser",
+    "description": "A simple Rss Parser for PHP.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev",
+        "ext-mbstring": "*",
+        "ext-xml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "UncleNine\\": "src/"
+        }
+    }
+}
