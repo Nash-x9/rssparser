@@ -347,11 +347,11 @@ class FetchRss{
         }
 
         if ( !defined('MAGPIE_CACHE_ON') ) {
-            define('MAGPIE_CACHE_ON', true);
+            define('MAGPIE_CACHE_ON', false);
         }
 
         if ( !defined('MAGPIE_CACHE_DIR') ) {
-            define('MAGPIE_CACHE_DIR', '.'.sys_get_temp_dir());
+            define('MAGPIE_CACHE_DIR', '.'.sys_get_temp_dir().'/rsscache');
         }
 
         if ( !defined('MAGPIE_CACHE_AGE') ) {
