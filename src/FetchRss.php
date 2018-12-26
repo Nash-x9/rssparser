@@ -351,7 +351,7 @@ class FetchRss{
         }
 
         if ( !defined('MAGPIE_CACHE_DIR') ) {
-            define('MAGPIE_CACHE_DIR', './cache');
+            define('MAGPIE_CACHE_DIR', '.'.sys_get_temp_dir());
         }
 
         if ( !defined('MAGPIE_CACHE_AGE') ) {
