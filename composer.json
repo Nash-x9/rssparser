@@ -3,9 +3,9 @@
     "description": "A simple Rss Parser for PHP.",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "guzzlehttp/guzzle": "^6.3@dev",
+        "guzzlehttp/guzzle": "^6.3",
         "ext-mbstring": "*",
         "ext-xml": "*"
     },
