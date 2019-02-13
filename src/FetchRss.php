@@ -301,7 +301,7 @@ class FetchRss{
         $original_body = (string)$resp->getBody();
         $utf8_body = mb_convert_encoding($original_body, 'UTF-8', @$parsed[0]['charset'] ?: 'UTF-8');
 
-        $rss = new MagpieRSS( $utf8_body, MAGPIE_OUTPUT_ENCODING, MAGPIE_INPUT_ENCODING, MAGPIE_DETECT_ENCODING );
+        $rss = new MagpieRss( $utf8_body, MAGPIE_OUTPUT_ENCODING, MAGPIE_INPUT_ENCODING, MAGPIE_DETECT_ENCODING );
 
         // if RSS parsed successfully
         if ( $rss and !$rss->ERROR) {
